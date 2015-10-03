@@ -1,3 +1,5 @@
+package assertjtest;
+
 public class Seed {
 
 
@@ -12,6 +14,11 @@ public class Seed {
     TODO http://joel-costigliola.github.io/assertj/assertj-core-news.html#assertj-core-3.0.0
 
 assertThat(objectToTest). // code completion, methods depend on object submitted
+
+
+multi assertions for one object
+
+TODO filtered on with property
 
      */
 }

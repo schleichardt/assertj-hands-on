@@ -1,3 +1,5 @@
+package assertjtest;
+
 import com.fasterxml.jackson.core.type.TypeReference;
 import io.sphere.sdk.json.SphereJsonUtils;
 import io.sphere.sdk.products.ProductProjection;

@@ -1,3 +1,5 @@
+package assertjtest;
+
 import org.apache.commons.io.IOUtils;
 
 public final class ResourceUtil {
