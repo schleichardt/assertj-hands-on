@@ -20,5 +20,7 @@ multi assertions for one object
 
 TODO filtered on with property
 
+TODO give example with cucumber and table
+
      */
 }

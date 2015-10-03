@@ -4,10 +4,12 @@ import io.sphere.sdk.categories.Category;
 import io.sphere.sdk.models.LocalizedString;
 import io.sphere.sdk.models.Reference;
 import io.sphere.sdk.products.ProductProjection;
+import org.assertj.core.api.SoftAssertions;
 import org.junit.Test;
 
 import java.util.List;
 import java.util.Locale;
+import java.util.function.Consumer;
 
 import static java.util.Arrays.asList;
 import static java.util.stream.Collectors.toList;
@@ -149,6 +151,71 @@ but could not find:
  */
     }
 
+
+
+    @Test
+    public void m() {
+        final ProductProjection productProjection = list.get(3);
+        assertThat(productProjection.getId()).isEqualTo("461e2e52-50c9-4d77-a2f2-1cb77b601556");
+        assertThat(productProjection.getProductType().getId()).isEqualTo("461e2e52-50c9-4d77-a2f2-1cb77b601556");
+/*
+org.junit.ComparisonFailure:
+Expected :"461e2e52-50c9-4d77-a2f2-1cb77b601556"
+Actual   :"ff0c34c3-bd33-4991-89f5-dfa96b69b26c"
+ */
+
+        //which one failed?
+        //so you could split the method into two and use one assertion per test method
+    }
+
+    @Test
+    public void m1() {
+        final ProductProjection productProjection = list.get(3);
+        assertThat(productProjection.getId()).as("id").isEqualTo("461e2e52-50c9-4d77-a2f2-1cb77b601556");
+        assertThat(productProjection.getProductType().getId()).as("productType id").isEqualTo("461e2e52-50c9-4d77-a2f2-1cb77b601556");
+/*
+org.junit.ComparisonFailure: [id]
+Expected :"461e2e52-50c9-4d77-a2f2-1cb77b601556"
+Actual   :"ff0c34c3-bd33-4991-89f5-dfa96b69b26c"
+ */
+
+        //ah, it is the id
+        //in fest assert overridingErrorMessage was used to achieve that, but the div was broken then
+    }
+
+
+    //use this so you don't forget to call assertAll()
+    public static void softAssert(final Consumer<SoftAssertions> softlyConsumer) {
+        final SoftAssertions softly = new SoftAssertions();
+        softlyConsumer.accept(softly);
+        softly.assertAll();
+    }
+
+    @Test
+    public void softAssertions() {
+        final Reference<Category> smartPhones = Reference.of(Category.referenceTypeId(), "xab84062-f4d7-4dd6-a576-ce5c10923e68");
+        final ProductProjection productProjection = list.get(3);
+        softAssert(softly -> {
+            softly.assertThat(productProjection.getName().get(Locale.ENGLISH)).as("name").isEqualTo("Nexus 5");
+            softly.assertThat(productProjection.getSlug().get(Locale.ENGLISH)).as("slug").isEqualTo("google-nexus-5");
+            softly.assertThat(productProjection.getId()).as("id").isEqualTo("3b423f46-124e-4db5-b16a-1d68afabe640");
+            softly.assertThat(productProjection.getCategories()).as("categories").contains(smartPhones);
+        });
+/*
+org.assertj.core.api.SoftAssertionError:
+The following 4 assertions failed:
+1) [name] expected:<"[Nexus 5]"> but was:<"[MB PREMIUM TECH T]">
+2) [slug] expected:<"[google-nexus-5]"> but was:<"[mb-premium-tech-t1417714797277]">
+3) [id] expected:<"[3b423f46-124e-4db5-b16a-1d68afabe640]"> but was:<"[ff0c34c3-bd33-4991-89f5-dfa96b69b26c]">
+4) [categories]
+Expecting:
+ <[Reference{typeId='category', id='eab84062-f4d7-4dd6-a576-ce5c10923e68', obj=null}]>
+to contain:
+ <[Reference{typeId='category', id='xab84062-f4d7-4dd6-a576-ce5c10923e68', obj=null}]>
+but could not find:
+ <[Reference{typeId='category', id='xab84062-f4d7-4dd6-a576-ce5c10923e68', obj=null}]>
+ */
+    }
 }
 
 
