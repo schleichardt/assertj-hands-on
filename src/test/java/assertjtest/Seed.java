@@ -22,5 +22,9 @@ TODO filtered on with property
 
 TODO give example with cucumber and table
 
+TODO suggest http://joel-costigliola.github.io/assertj/assertj-core-features-highlight.html#ide-automatic-static-import
+
+//TODO http://joel-costigliola.github.io/assertj/assertj-core-features-highlight.html#exception-assertion
+
      */
 }
