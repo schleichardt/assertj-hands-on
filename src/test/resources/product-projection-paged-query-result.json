@@ -1,0 +1,292 @@
+{
+  "offset": 0,
+  "count": 5,
+  "total": 5,
+  "results": [
+    {
+      "id": "8665d91a-eab0-45a8-a378-e6603d66d084",
+      "version": 4,
+      "productType": {
+        "typeId": "product-type",
+        "id": "c6af7304-4e35-48d6-8687-66ca2dab5dbb"
+      },
+      "name": {
+        "en": "GIRLS HARTBREAK CREW"
+      },
+      "description": {
+        "en": "Sample description"
+      },
+      "categories": [
+        {
+          "typeId": "category",
+          "id": "eab84062-f4d7-4dd6-a576-ce5c10923e68"
+        }
+      ],
+      "categoryOrderHints": {},
+      "slug": {
+        "en": "girls-hartbreak-crew1417714797195"
+      },
+      "masterVariant": {
+        "id": 1,
+        "sku": "sku_GIRLS_HARTBREAK_CREW_variant1_1417714797195",
+        "prices": [
+          {
+            "value": {
+              "currencyCode": "EUR",
+              "centAmount": 3400
+            },
+            "id": "1513154a-5cc9-4b2f-88a3-4e096ae92f0e"
+          }
+        ],
+        "images": [
+          {
+            "url": "https://www.commercetools.com/cli/data/253234387_1.jpg",
+            "dimensions": {
+              "w": 1400,
+              "h": 1400
+            }
+          }
+        ],
+        "attributes": []
+      },
+      "variants": [],
+      "searchKeywords": {},
+      "hasStagedChanges": true,
+      "published": true,
+      "taxCategory": {
+        "typeId": "tax-category",
+        "id": "0b423f46-124e-4db5-b16a-1d68afabe640"
+      },
+      "createdAt": "2014-12-04T17:39:57.214Z",
+      "lastModifiedAt": "2015-05-23T09:28:02.086Z"
+    },
+    {
+      "id": "347caac1-daa2-4e31-bc95-e237ba1e2b91",
+      "version": 4,
+      "productType": {
+        "typeId": "product-type",
+        "id": "c6af7304-4e35-48d6-8687-66ca2dab5dbb"
+      },
+      "name": {
+        "en": "WB ATHLETIC TANK"
+      },
+      "description": {
+        "en": "Sample description"
+      },
+      "categories": [
+        {
+          "typeId": "category",
+          "id": "0ff5fd1d-f7c9-4ba3-a3dc-d74c417526c6"
+        }
+      ],
+      "categoryOrderHints": {},
+      "slug": {
+        "en": "wb-athletic-tank1417714797219"
+      },
+      "masterVariant": {
+        "id": 1,
+        "sku": "sku_WB_ATHLETIC_TANK_variant1_1417714797219",
+        "prices": [
+          {
+            "value": {
+              "currencyCode": "EUR",
+              "centAmount": 8400
+            },
+            "id": "403f7308-f786-4fd3-9d98-2ccf4cb6f590"
+          }
+        ],
+        "images": [
+          {
+            "url": "https://www.commercetools.com/cli/data/253265444_1.jpg",
+            "dimensions": {
+              "w": 1400,
+              "h": 1400
+            }
+          }
+        ],
+        "attributes": []
+      },
+      "variants": [],
+      "searchKeywords": {},
+      "hasStagedChanges": true,
+      "published": true,
+      "taxCategory": {
+        "typeId": "tax-category",
+        "id": "0b423f46-124e-4db5-b16a-1d68afabe640"
+      },
+      "createdAt": "2014-12-04T17:39:57.234Z",
+      "lastModifiedAt": "2015-05-23T09:28:02.108Z"
+    },
+    {
+      "id": "f7edccd2-95d7-4fea-b511-ae5b3e309c7d",
+      "version": 4,
+      "productType": {
+        "typeId": "product-type",
+        "id": "c6af7304-4e35-48d6-8687-66ca2dab5dbb"
+      },
+      "name": {
+        "en": "MB SOFTSHELL LINER"
+      },
+      "description": {
+        "en": "Sample description"
+      },
+      "categories": [
+        {
+          "typeId": "category",
+          "id": "3f3d7425-b1df-473b-9425-4cddba412f3e"
+        }
+      ],
+      "categoryOrderHints": {},
+      "slug": {
+        "en": "mb-softshell-liner1417714797242"
+      },
+      "masterVariant": {
+        "id": 1,
+        "sku": "sku_MB_SOFTSHELL_LINER_variant1_1417714797242",
+        "prices": [
+          {
+            "value": {
+              "currencyCode": "EUR",
+              "centAmount": 10000
+            },
+            "id": "b6ff373f-506e-46b1-af00-8ef0c7fd2e64"
+          }
+        ],
+        "images": [
+          {
+            "url": "https://www.commercetools.com/cli/data/254391631_1.jpg",
+            "dimensions": {
+              "w": 1400,
+              "h": 1400
+            }
+          }
+        ],
+        "attributes": []
+      },
+      "variants": [],
+      "searchKeywords": {},
+      "hasStagedChanges": true,
+      "published": true,
+      "taxCategory": {
+        "typeId": "tax-category",
+        "id": "0b423f46-124e-4db5-b16a-1d68afabe640"
+      },
+      "createdAt": "2014-12-04T17:39:57.271Z",
+      "lastModifiedAt": "2015-05-23T09:28:02.130Z"
+    },
+    {
+      "id": "ff0c34c3-bd33-4991-89f5-dfa96b69b26c",
+      "version": 4,
+      "productType": {
+        "typeId": "product-type",
+        "id": "c6af7304-4e35-48d6-8687-66ca2dab5dbb"
+      },
+      "name": {
+        "en": "MB PREMIUM TECH T"
+      },
+      "description": {
+        "en": "Sample description"
+      },
+      "categories": [
+        {
+          "typeId": "category",
+          "id": "eab84062-f4d7-4dd6-a576-ce5c10923e68"
+        }
+      ],
+      "categoryOrderHints": {},
+      "slug": {
+        "en": "mb-premium-tech-t1417714797277"
+      },
+      "masterVariant": {
+        "id": 1,
+        "sku": "sku_MB_PREMIUM_TECH_T_variant1_1417714797277",
+        "prices": [
+          {
+            "value": {
+              "currencyCode": "EUR",
+              "centAmount": 10000
+            },
+            "id": "02e4c5ea-89aa-45d7-b571-3761ddc1a302"
+          }
+        ],
+        "images": [
+          {
+            "url": "https://www.commercetools.com/cli/data/253245821_1.jpg",
+            "dimensions": {
+              "w": 1400,
+              "h": 1400
+            }
+          }
+        ],
+        "attributes": []
+      },
+      "variants": [],
+      "searchKeywords": {},
+      "hasStagedChanges": true,
+      "published": true,
+      "taxCategory": {
+        "typeId": "tax-category",
+        "id": "0b423f46-124e-4db5-b16a-1d68afabe640"
+      },
+      "createdAt": "2014-12-04T17:39:57.296Z",
+      "lastModifiedAt": "2015-05-23T09:28:02.152Z"
+    },
+    {
+      "id": "461e2e52-50c9-4d77-a2f2-1cb77b601556",
+      "version": 4,
+      "productType": {
+        "typeId": "product-type",
+        "id": "c6af7304-4e35-48d6-8687-66ca2dab5dbb"
+      },
+      "name": {
+        "en": "SAPPHIRE"
+      },
+      "description": {
+        "en": "Sample description"
+      },
+      "categories": [
+        {
+          "typeId": "category",
+          "id": "3f3d7425-b1df-473b-9425-4cddba412f3e"
+        }
+      ],
+      "categoryOrderHints": {},
+      "slug": {
+        "en": "sapphire1417714797145"
+      },
+      "masterVariant": {
+        "id": 1,
+        "sku": "sku_SAPPHIRE_variant1_1417714797145",
+        "prices": [
+          {
+            "value": {
+              "currencyCode": "EUR",
+              "centAmount": 2800
+            },
+            "id": "b6fbf092-55eb-40ac-9ca9-336ca401b252"
+          }
+        ],
+        "images": [
+          {
+            "url": "https://www.commercetools.com/cli/data/252542005_1.jpg",
+            "dimensions": {
+              "w": 1400,
+              "h": 1400
+            }
+          }
+        ],
+        "attributes": []
+      },
+      "variants": [],
+      "searchKeywords": {},
+      "hasStagedChanges": true,
+      "published": true,
+      "taxCategory": {
+        "typeId": "tax-category",
+        "id": "0b423f46-124e-4db5-b16a-1d68afabe640"
+      },
+      "createdAt": "2014-12-04T17:39:57.189Z",
+      "lastModifiedAt": "2015-05-23T09:28:02.058Z"
+    }
+  ]
+}
